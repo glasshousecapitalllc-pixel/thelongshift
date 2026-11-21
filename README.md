@@ -24,7 +24,7 @@ Then open http://localhost:8765.
 
 ## Opening a stream
 
-Streams live on a hosted layer (WhatsApp Community, Discord or Circle), not in this code. Create the group there, paste the invite link into `config.js` under the room and stage, add a one-line `who`, and the page shows "Join the stream". Until then it shows "Not open yet" with an "Ask to open it" link to the `contact` address.
+Streams live in one WhatsApp Community, one group per room and stage, not in this code. `community/whatsapp-setup.md` has the steps, the group names, the descriptions and rules to paste, and the Monday question. Create the group, paste its invite link into `config.js` under the room and stage, add a one-line `who`, and the page shows "Join on WhatsApp". Until then it shows "Not open yet" with an "Ask to open it" link to the `contact` address.
 
 ## Rules the pages promise
 

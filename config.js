@@ -1,9 +1,10 @@
 /* Man About The House — site configuration.
  *
  * This is the only file you should need to edit to open a stream or add a meet-up.
- * Streams live on a hosted layer (WhatsApp Community, Discord, Circle). Paste the invite
- * link against the room and stage. Leave a link as null and the page shows an honest
- * "not open yet" with a way to ask for it.
+ * Streams live in one WhatsApp Community, one group per room and stage. Paste each group's
+ * invite link (it starts https://chat.whatsapp.com/) against the room and stage. Leave a link
+ * as null and the page shows an honest "not open yet" with a way to ask for it.
+ * Setup, names and the rules to paste are in community/whatsapp-setup.md.
  */
 window.MATH_CONFIG = {
   siteName: "Man About The House",

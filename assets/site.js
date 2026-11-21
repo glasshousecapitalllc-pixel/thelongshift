@@ -61,7 +61,7 @@
         el.appendChild(who);
         var a = document.createElement("a");
         a.className = "join"; a.href = s.url; a.rel = "noopener"; a.target = "_blank";
-        a.textContent = "Join the stream";
+        a.textContent = /chat\.whatsapp\.com/.test(s.url) ? "Join on WhatsApp" : "Join the stream";
         el.appendChild(a);
       } else {
         who.textContent = "Not open yet.";
@@ -133,6 +133,7 @@
     renderMeetups();
   }
 
+  window.MATH_render = render;
   document.addEventListener("DOMContentLoaded", function () {
     markCurrentDoor();
     render();
