@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Money, Man About The House</title>
+<meta name="description" content="Child maintenance worked out properly, first-year costs, what you're owed, and the first steps on debt.">
+<link rel="stylesheet" href="assets/style.css">
+<script src="config.js"></script>
+<script src="assets/site.js" defer></script>
+<script src="assets/calc.js" defer></script>
+</head>
+<body class="money">
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">Man About The House</a>
+    <nav class="doors" aria-label="Rooms">
+      <a href="money.html">Money</a>
+      <a href="work.html">Work</a>
+      <a href="fixer.html">Fixer</a>
+      <a href="room.html">The Room</a>
+    </nav>
+  </div>
+</header>
+
+<div class="stages"><div class="wrap" data-stages></div></div>
+
+<main class="wrap">
+  <section class="room-head">
+    <h1>Money</h1>
+    <p class="lead">The kitchen table, the brown envelopes, the sum that doesn't add up. Start with the number you're most afraid of.</p>
+    <p class="lead caution">General guidance and the official tools. Not personal financial advice. If you have real money, see someone regulated; if you have none, see StepChange, who are free.</p>
+  </section>
+
+  <section class="calc" aria-labelledby="cm-title">
+    <h2 id="cm-title">What will child maintenance cost?</h2>
+    <p class="note small">Child Maintenance Service rules for England, Wales and Scotland, worked through step by step. An estimate. The <a href="https://www.gov.uk/calculate-child-maintenance" rel="noopener">official calculator</a> is the one that counts, and a private agreement between you can be whatever you both sign up to.</p>
+
+    <form id="cm-form" autocomplete="off">
+      <div class="field">
+        <label for="income">Your gross income</label>
+        <div class="inline">
+          <input id="income" name="income" type="number" min="0" step="1" value="32000" inputmode="decimal">
+          <select name="period" aria-label="Income period">
+            <option value="year" selected>a year</option>
+            <option value="month">a month</option>
+            <option value="week">a week</option>
+          </select>
+        </div>
+        <span class="help">Before tax, from your last tax year. Pension contributions come off; the service uses HMRC's figure.</span>
+      </div>
+
+      <div class="field">
+        <label for="kids">Children you're paying for</label>
+        <select id="kids" name="kids">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3 or more</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="otherkids">Other children living with you</label>
+        <select id="otherkids" name="otherkids">
+          <option value="0" selected>None</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3 or more</option>
+        </select>
+        <span class="help">Yours or a partner's, if you get child benefit for them. They reduce the income counted.</span>
+      </div>
+
+      <div class="field">
+        <label for="shared">Nights the children stay with you</label>
+        <select id="shared" name="shared">
+          <option value="none" selected>Fewer than 52 a year</option>
+          <option value="a">52 to 103 a year (one night a week)</option>
+          <option value="b">104 to 155 a year (two nights a week)</option>
+          <option value="c">156 to 174 a year (three nights a week)</option>
+          <option value="d">175 or more (half the time)</option>
+        </select>
+      </div>
+
+      <div class="field check">
+        <input id="benefits" name="benefits" type="checkbox">
+        <label for="benefits">I get Universal Credit with no earnings, Jobseeker's Allowance, Income Support, ESA or State Pension</label>
+      </div>
+    </form>
+
+    <div class="result" aria-live="polite">
+      <p class="per">You'd pay about</p>
+      <p class="headline" id="cm-weekly">£0.00</p>
+      <p class="per">a week</p>
+      <dl>
+        <dt>A month</dt><dd id="cm-monthly">£0.00</dd>
+        <dt>A year</dt><dd id="cm-yearly">£0.00</dd>
+        <dt>Per child, a week</dt><dd id="cm-perchild">£0.00</dd>
+      </dl>
+      <p class="warn" id="cm-warn" hidden></p>
+      <ol class="steps" id="cm-steps"></ol>
+    </div>
+  </section>
+
+  <div class="stream" data-stream="money"></div>
+
+  <section class="two-col">
+    <div>
+      <div class="guide">
+        <h3>If you're separated and the numbers have started</h3>
+        <ul>
+          <li>Keep every message about money in writing. Texts count. Shouting doesn't.</li>
+          <li>A family-based arrangement costs nothing. Going through the service costs the paying parent 20% on top and the receiving parent 4% off. Agree it between you if there is any way on earth to.</li>
+          <li>The service uses last year's HMRC income. If you've lost your job or your income has dropped by 25% or more, tell them. It is not automatic.</li>
+          <li>Child maintenance and seeing your children are separate things in law. Neither is a lever on the other, whatever anyone says at the door.</li>
+          <li>Arrears don't go away. They follow you, with enforcement. If you can't pay, say so early and in writing.</li>
+        </ul>
+      </div>
+      <div class="guide">
+        <h3>What you may be owed</h3>
+        <ul>
+          <li>Run a benefits check at <a href="https://www.entitledto.co.uk" rel="noopener">entitledto</a> or <a href="https://benefits-calculator.turn2us.org.uk" rel="noopener">Turn2us</a>. Ten minutes. Working dads miss Universal Credit top-ups and council tax reductions every day.</li>
+          <li>Child Benefit: claim it even if you earn too much to keep it, because it protects your partner's state pension record. Over about £60,000 you start paying some back; over about £80,000 all of it.</li>
+          <li>Tax-Free Childcare pays £2 for every £8 you put in, up to £2,000 a child a year. Separate from the free hours.</li>
+          <li>Marriage Allowance if one of you earns under the personal allowance: a few hundred pounds a year, backdated four years.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="planner guide">
+        <h3>The first year, roughly</h3>
+        <p class="small">Change the numbers to yours. Second-hand is not a failure. It is what everyone sensible does.</p>
+        <table id="planner">
+          <thead><tr><th>Item</th><th>£</th></tr></thead>
+          <tbody>
+            <tr><td>Pram, car seat, cot, the big kit</td><td><input type="number" min="0" step="10" value="600"></td></tr>
+            <tr><td>Nappies and wipes for a year</td><td><input type="number" min="0" step="10" value="500"></td></tr>
+            <tr><td>Formula, if used, for a year</td><td><input type="number" min="0" step="10" value="700"></td></tr>
+            <tr><td>Clothes, the lot grows out monthly</td><td><input type="number" min="0" step="10" value="300"></td></tr>
+            <tr><td>Nursery or childminder, if going back to work</td><td><input type="number" min="0" step="50" value="0"></td></tr>
+            <tr><td>Lost earnings during leave</td><td><input type="number" min="0" step="50" value="0"></td></tr>
+            <tr><td>Everything you forgot</td><td><input type="number" min="0" step="10" value="300"></td></tr>
+          </tbody>
+          <tfoot><tr><td>Year one</td><td><span id="planner-total">£0</span><br><span class="small" id="planner-weekly"></span></td></tr></tfoot>
+        </table>
+      </div>
+      <div class="guide brick">
+        <h3>If the debt has got away from you</h3>
+        <ul>
+          <li><a href="https://www.stepchange.org" rel="noopener">StepChange</a> and <a href="https://www.nationaldebtline.org" rel="noopener">National Debtline</a> are free and do not judge. The firms that advertise are not free.</li>
+          <li>Priority debts first: rent or mortgage, council tax, energy, court fines, child maintenance. Credit cards shout loudest and matter least.</li>
+          <li>Breathing Space: 60 days with interest and enforcement frozen, through a debt adviser. It exists. Use it.</li>
+          <li>Tell your partner before the letters do. The debt is bad. The secret is worse.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="index.html">Man About The House</a>
+      <p>Built in the UK by a dad with a laptop. Free to use.</p>
+      <p class="small">We give general guidance and point you at the official tools. We are not solicitors, accountants or regulated financial advisers, and nothing here is personal advice.</p>
+    </div>
+    <div>
+      <p><a href="money.html">Money</a></p>
+      <p><a href="work.html">Work</a></p>
+      <p><a href="fixer.html">Fixer</a></p>
+      <p><a href="room.html">The Room</a></p>
+    </div>
+    <div>
+      <p><a href="https://www.gov.uk/child-maintenance-service" rel="noopener">Child Maintenance Service</a>, gov.uk.</p>
+      <p><a href="https://www.stepchange.org" rel="noopener">StepChange</a>, free debt advice.</p>
+      <p><a href="https://www.samaritans.org" rel="noopener">Samaritans</a>, 116 123.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
