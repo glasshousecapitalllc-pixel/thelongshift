@@ -1,7 +1,7 @@
 /* Stage switcher, stream rendering, doors. Plain JS, no build step. */
 (function () {
-  var cfg = window.MATH_CONFIG;
-  var KEY = "math.stage";
+  var cfg = window.LONGSHIFT_CONFIG;
+  var KEY = "longshift.stage";
 
   function getStage() {
     var s = null;
@@ -133,7 +133,7 @@
     renderMeetups();
   }
 
-  window.MATH_render = render;
+  window.LONGSHIFT_render = render;
   document.addEventListener("DOMContentLoaded", function () {
     markCurrentDoor();
     render();

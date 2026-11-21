@@ -123,7 +123,7 @@
   show();
 
   // Expose for tests in the console.
-  window.MATH_calculateMaintenance = calculate;
+  window.LONGSHIFT_calculateMaintenance = calculate;
 })();
 
 /* First-year cost planner: a table that adds up. */

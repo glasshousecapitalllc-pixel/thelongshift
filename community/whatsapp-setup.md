@@ -14,7 +14,7 @@ Second, when asked: The Room for whichever town has a night. Third: Money, first
 
 ## Steps
 
-1. WhatsApp, Communities tab, New community. Name: `Man About The House`. Description: paste the Community description below. Picture: anything plain; the name does the work.
+1. WhatsApp, Communities tab, New community. Name: `The Long Shift`. Description: paste the Community description below. Picture: anything plain; the name does the work.
 2. The Community comes with an announcement group only admins can post in. Use it for one line a week at most. Pin the house rules there.
 3. In the Community, Add group, Create new group. Name it exactly as in the list below. Paste the matching group description. Settings: Edit group info, admins only. Send messages, all members. Disappearing messages: off. Members can add others: off, so every man comes through the link or an invite.
 4. Group info, Invite via link, Copy link. The link looks like `https://chat.whatsapp.com/...`.
@@ -40,7 +40,7 @@ Use these exactly, so the page and the groups match.
 ## Community description (paste)
 
 ```
-Man About The House. Four rooms for dads: Money, Work, Fixer and The Room. Each group is one room at one stage of fatherhood. Free. First names or none.
+The Long Shift. Four rooms for dads: Money, Work, Fixer and The Room. Each group is one room at one stage of fatherhood. Free. First names or none.
 
 What is said here stays here. Nobody fixes anybody. No selling, no links to your business, no screenshots out. Be the bloke you'd want in the room at 3am.
 
@@ -71,7 +71,7 @@ Monday. Three things, answer any or none:
 - Reply to the first message from any new man within the day, even with one line. Silence is why forums die.
 - Remove anyone selling or screenshotting on the first offence. Say why in the group. Everyone else relaxes when they see the rules are real.
 - A man in crisis gets a private message from you with the Samaritans number and a question about tonight, not a group pile-on. Then check the next day.
-- You are not the service. You are the man about the house. Point at StepChange, Acas, the Child Maintenance Service, the GP, and let them be the service.
+- You are not the service. You are the bloke on the same shift. Point at StepChange, Acas, the Child Maintenance Service, the GP, and let them be the service.
 - When a group passes about 40 regulars, find the man who answers most and make him admin. That is how it survives you.
 
 ## Limits worth knowing

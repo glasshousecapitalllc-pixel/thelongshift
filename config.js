@@ -1,4 +1,4 @@
-/* Man About The House — site configuration.
+/* The Long Shift — site configuration.
  *
  * This is the only file you should need to edit to open a stream or add a meet-up.
  * Streams live in one WhatsApp Community, one group per room and stage. Paste each group's
@@ -6,8 +6,8 @@
  * as null and the page shows an honest "not open yet" with a way to ask for it.
  * Setup, names and the rules to paste are in community/whatsapp-setup.md.
  */
-window.MATH_CONFIG = {
-  siteName: "Man About The House",
+window.LONGSHIFT_CONFIG = {
+  siteName: "The Long Shift",
 
   // Where "ask to open this stream" requests go. A mailto works until there is a form.
   contact: "mailto:hello@example.com?subject=Open%20a%20stream",
