@@ -10,7 +10,7 @@ Sixteen empty groups is the Dadsnet forum again. Open one, fill it, then open th
 
 **Money, separated dads.**
 
-Second, when asked: The Room for whichever town has a night. Third: Money, first year.
+Second, when asked: Chat for whichever town has a night. Third: Money, first year.
 
 ## Steps
 
@@ -35,12 +35,12 @@ Use these exactly, so the page and the groups match.
 | Money | Separated | Money · Separated dads |
 | Work | any | Work · (stage as above) |
 | Fixer | any | Fixer · (stage as above) |
-| The Room | any | The Room · (stage as above), or The Room · (Town) once a night exists |
+| Chat | any | Chat · (stage as above), or Chat · (Town) once a night exists |
 
 ## Community description (paste)
 
 ```
-The Long Shift. Four rooms for dads: Money, Work, Fixer and The Room. Each group is one room at one stage of fatherhood. Free. First names or none.
+The Long Shift. Four rooms for dads: Money, Work, Fixer and Chat. Each group is one room at one stage of fatherhood. Free. First names or none.
 
 What is said here stays here. Nobody fixes anybody. No selling, no links to your business, no screenshots out. Be the bloke you'd want in the room at 3am.
 

@@ -25,7 +25,7 @@ window.LONGSHIFT_CONFIG = {
     { id: "money", label: "Money", what: "Maintenance, bills, debt, what you're owed", href: "money.html" },
     { id: "work",  label: "Work",  what: "Hours, leave, bosses, redundancy, side income", href: "work.html" },
     { id: "fixer", label: "Fixer", what: "The house, the boiler, the trades", href: "fixer.html" },
-    { id: "room",  label: "The Room", what: "Monday nights, five-a-side, a pint", href: "room.html" }
+    { id: "room",  label: "Chat", what: "Something on your mind. Let's hear it.", href: "room.html" }
   ],
 
   // streams[room][stage] = { url, label, who }
@@ -51,14 +51,14 @@ window.LONGSHIFT_CONFIG = {
       separated: { url: null, label: "Fixer, separated dads", who: null }
     },
     room: {
-      first:     { url: null, label: "The Room, first year", who: null },
-      primary:   { url: null, label: "The Room, toddlers to primary", who: null },
-      teen:      { url: null, label: "The Room, teenagers", who: null },
-      separated: { url: null, label: "The Room, separated dads", who: null }
+      first:     { url: null, label: "Chat, first year", who: null },
+      primary:   { url: null, label: "Chat, toddlers to primary", who: null },
+      teen:      { url: null, label: "Chat, teenagers", who: null },
+      separated: { url: null, label: "Chat, separated dads", who: null }
     }
   },
 
-  // Real-world meet-ups. Add one per line. Shown on The Room page.
+  // Real-world meet-ups. Add one per line. Shown on the Chat page.
   meetups: [
     // { town: "Halifax", when: "Mondays 7pm", where: "The Hub, Market Street", note: "Bring a mate", url: null }
   ]

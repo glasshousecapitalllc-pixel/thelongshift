@@ -2,7 +2,7 @@
 
 Working name until 21 November 2026: Man About The House. The domain is thelongshift.co.uk.
 
-A web page for dads: Money, Work, Fixer and The Room, each cut by life stage (expecting and first year, toddlers to primary, teenagers, separated). Fatherhood talk is the by-product, not a section. The research behind the shape is in `Panclaude/reports/Man about the house dads app.md`.
+A web page for dads: Money, Work, Fixer and Chat, each cut by life stage (expecting and first year, toddlers to primary, teenagers, separated). Fatherhood talk is the by-product, not a section. The research behind the shape is in `Panclaude/reports/Man about the house dads app.md`.
 
 ## What is here
 
