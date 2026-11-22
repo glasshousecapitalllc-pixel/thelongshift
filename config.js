@@ -14,10 +14,10 @@ window.LONGSHIFT_CONFIG = {
 
   // Life stages. The order here is the order on the switcher.
   stages: [
-    { id: "first",     label: "Expecting and first year" },
-    { id: "primary",   label: "Toddlers to primary" },
-    { id: "teen",      label: "Teenagers" },
-    { id: "separated", label: "Separated" }
+    { id: "first",     label: "Expecting and first year", sub: "No sleep, new sums" },
+    { id: "primary",   label: "Toddlers to primary",      sub: "School runs, nursery bills" },
+    { id: "teen",      label: "Teenagers",                sub: "Doors slamming" },
+    { id: "separated", label: "Separated",                sub: "Every other weekend" }
   ],
 
   // Rooms. The order here is the order of the doors.

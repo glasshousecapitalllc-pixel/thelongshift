@@ -23,15 +23,16 @@
     if (!host) return;
     var cur = getStage();
     host.innerHTML = "";
-    var lede = document.createElement("span");
-    lede.className = "lede";
-    lede.textContent = cur ? "Your stage:" : "Where are you?";
-    host.appendChild(lede);
+    host.className = "rota";
+    host.setAttribute("role", "group");
+    host.setAttribute("aria-label", cur ? "Your stage" : "Where are you? Pick a stage");
     cfg.stages.forEach(function (st) {
       var b = document.createElement("button");
       b.type = "button";
       b.className = "stage-btn" + (st.id === "separated" ? " separated" : "");
-      b.textContent = st.label;
+      var n = document.createElement("span"); n.className = "name"; n.textContent = st.label;
+      var sub = document.createElement("span"); sub.className = "sub"; sub.textContent = st.sub || "";
+      b.appendChild(n); b.appendChild(sub);
       b.setAttribute("aria-pressed", String(st.id === cur));
       b.addEventListener("click", function () { setStage(st.id); });
       host.appendChild(b);
@@ -46,8 +47,10 @@
       var who = document.createElement("p"); who.className = "who";
       var body = document.createElement("p"); body.className = "empty";
       el.innerHTML = "";
+      el.classList.remove("not-open");
 
       if (!cur) {
+        el.classList.add("not-open");
         h.textContent = "The stream for this room";
         who.textContent = "Pick your stage at the top and the right stream opens here.";
         el.appendChild(h); el.appendChild(who);
@@ -64,6 +67,7 @@
         a.textContent = /chat\.whatsapp\.com/.test(s.url) ? "Join on WhatsApp" : "Join the stream";
         el.appendChild(a);
       } else {
+        el.classList.add("not-open");
         who.textContent = "Not open yet.";
         el.appendChild(who);
         body.textContent = "A stream opens when enough men at this stage ask for it. Asking takes one line.";
